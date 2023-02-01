@@ -78,7 +78,7 @@ async fn search(
             e.title("Anime Search")
                 .description(format!("Found {} results", res.total))
                 .fields(data)
-        })
+        }).ephemeral(true)
     })
     .await?;
 
